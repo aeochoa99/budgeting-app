@@ -9,6 +9,11 @@
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 input, button, textarea, select {
@@ -25,4 +30,37 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    gap: 15px;
+}
+
+.display-budget {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.income-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+button {
+    width: 100%;
+}
+
+.needs,
+.wants,
+.savings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
