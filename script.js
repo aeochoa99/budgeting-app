@@ -12,3 +12,8 @@ function calculateBudget(income) {
 
     return values;
 }
+
+const calculateButton = document.querySelector('button');
+calculateButton.addEventListener('click', () => {
+    console.log('Click registered.');
+})
