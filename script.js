@@ -13,7 +13,13 @@ function calculateBudget(income) {
     return values;
 }
 
+function getInput() {
+    const incomeInput = Number(document.querySelector('input').value);
+    return incomeInput;
+}
+
 const calculateButton = document.querySelector('button');
 calculateButton.addEventListener('click', () => {
-    console.log('Click registered.');
+    const incomeInput = getInput();
+    console.log(incomeInput);
 })
